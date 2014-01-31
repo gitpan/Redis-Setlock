@@ -31,7 +31,7 @@ no_index:
 provides:
   Redis::Setlock:
     file: lib/Redis/Setlock.pm
-    version: 0.01
+    version: 0.02
 requires:
   Guard: 0
   Log::Minimal: 0
@@ -44,4 +44,4 @@ resources:
   bugtracker: https://github.com/fujiwara/Redis-Setlock/issues
   homepage: https://github.com/fujiwara/Redis-Setlock
   repository: git://github.com/fujiwara/Redis-Setlock.git
-version: 0.01
+version: 0.02

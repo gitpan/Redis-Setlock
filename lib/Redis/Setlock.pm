@@ -11,7 +11,7 @@ use Time::HiRes qw/ sleep /;
 use Carp;
 use Guard ();
 
-our $VERSION         = "0.01";
+our $VERSION         = "0.02";
 our $DEFAULT_EXPIRES = 86400;
 our $RETRY_INTERVAL  = 0.5;
 
@@ -247,7 +247,7 @@ Using in your perl code.
    use Redis::Setlock;
    use Redis;  # or Redis::Fast
    my $redis = Redis->new( server => 'redis.example.com:6379' );
-   if ( my $guard = Redis::Setlock->lock_gurad($redis, "key", 60) ) {
+   if ( my $guard = Redis::Setlock->lock_guard($redis, "key", 60) ) {
       # got a lock!
       ...
       # unlock at guard destroyed.
